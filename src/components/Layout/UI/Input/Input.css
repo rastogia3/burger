@@ -1,0 +1,25 @@
+input[type="email"], input[type="text"], input[type="password"], textarea, select {
+    font-weight: bold;
+    width: 100%;
+    border: .5px solid #aaa;
+    border-width: 0 0 .5px;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus, textarea:focus, select:focus {
+    outline: none;
+}
+
+input.invalid {
+    border-bottom-color: red;
+    background: lightsalmon;
+    color: #fff;
+}
+
+input.invalid+p {
+    text-align: justify;
+    font-size: .8rem;
+    color: red;
+    margin: 0;
+}

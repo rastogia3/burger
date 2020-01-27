@@ -1,0 +1,17 @@
+.OrderSummary {
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    margin-bottom: 20px;
+}
+
+.OrderSummary .ingredients {
+    display: flex;
+}
+
+.OrderSummary .ingredients p {
+    width: 33%;
+    text-transform: capitalize
+}

@@ -1,0 +1,28 @@
+.ContactForm{
+    border:1px solid #ccc;
+    box-shadow: 0 2px 3px #ccc;
+    text-align: center;
+    width:80%;
+    margin:20px auto;
+    box-sizing: border-box;
+}
+
+.ContactForm div{
+padding:0 10px 10px;
+margin-bottom: 10px;
+display: block;
+}
+.ContactForm div label{
+    font-weight: bold;
+    width:40%
+
+}
+.ContactForm div.ButtonGroup{
+    border:0
+}
+
+@media (min-width:600px){
+    .ContactForm{
+        width:500px
+    }
+}

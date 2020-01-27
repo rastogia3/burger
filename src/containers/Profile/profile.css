@@ -1,0 +1,28 @@
+.profileContainer{
+    border:1px solid #ccc;
+    box-shadow: 0 2px 3px #ccc;
+    text-align: center;
+    width:80%;
+    margin:20px auto;
+    box-sizing: border-box;
+}
+
+.profileContainer div{
+padding:0 10px 10px;
+margin-bottom: 10px;
+display: block;
+}
+.profileContainer div label{
+    font-weight: bold;
+    width:40%
+
+}
+.profileContainer div.ButtonGroup{
+    border:0
+}
+
+@media (min-width:600px){
+    .profileContainer{
+        width:500px
+    }
+}

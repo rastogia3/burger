@@ -1,0 +1,9 @@
+.content {
+    margin-top: 72px;
+    min-height: calc(100vh - 72px);
+}
+
+body.auth .content {
+    display: flex;
+    align-items: center;
+}

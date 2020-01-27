@@ -1,0 +1,43 @@
+.headerMain {
+  height: 56px;
+  width: 100%;
+  background: #703b09;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 90;
+  box-sizing: border-box;
+}
+.headerMain nav {
+  height: 100%;
+}
+
+.hamBurgerIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.hamBurgerIcon span{
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+@media (max-width: 499px) {
+  .desktopOnly {
+    display: none;
+  }
+}
+@media (min-width: 499px) {
+  .mobileOnly {
+    display: none;
+  }
+}
