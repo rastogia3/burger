@@ -1,4 +1,4 @@
-export { addIngredient, removeIngredient, initIngredients } from './burgerBuilders';
+export { addIngredient, removeIngredient, initIngredients, setIngredients, fetchIngredientsFailed } from './burgerBuilders';
 export {
     purchaseBurger,
     purchaseInit,

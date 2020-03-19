@@ -32,7 +32,7 @@ export function* purchaseBurger(action) {
         const res = axios.post(queryform, orderData);
         yield put(actions.purchaseBurgerSuccess(res.data, orderData))
     } catch (error) {
-        console.log(error)
+        yield put(actions.purchaseBurgerFail(error))
     }
 
 }

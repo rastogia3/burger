@@ -12,7 +12,7 @@ import thunk from 'redux-thunk';
 import authReducer from './store/reducer/authReducer';
 import profileReducer from "./store/reducer/profile"
 import createSagaMiddleware from "redux-saga"
-import { watchAuth } from "./store/sagas/index"
+import { watchAuth, watchBurgerBuilder, watchBurgerPurchase } from "./store/sagas/index"
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -29,6 +29,8 @@ const burgerStore = createStore(rootReducers, composeEnhancers(
 ));
 
 sagaMiddleware.run(watchAuth)
+sagaMiddleware.run(watchBurgerBuilder);
+sagaMiddleware.run(watchBurgerPurchase);
 
 const app = (
     <Provider store={burgerStore}>
